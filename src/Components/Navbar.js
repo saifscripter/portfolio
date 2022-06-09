@@ -26,7 +26,7 @@ const Navbar = () => {
       <div
         className={`${
           sidebar ? 'translate-x-0' : 'translate-x-full'
-        } fixed top-0 right-0 bottom-0 flex flex-col gap-20 justify-end items-center w-1/2 h-screen bg-black text-white transition-transform duration-200 ease-in-out pb-8`}>
+        } fixed top-0 right-0 bottom-0 z-40 flex flex-col gap-20 justify-end items-center w-1/2 h-screen bg-black text-white transition-transform duration-200 ease-in-out pb-8`}>
         <nav>
           <ul className='flex flex-col items-center gap-8 text-3xl'>
             <CustomLink to={'/'}>Home</CustomLink>
