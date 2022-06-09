@@ -41,6 +41,7 @@ const Navbar = () => {
           </ul>
         </nav>
         <a
+          onClick={() => setSidebar(!sidebar)}
           href='/#contact-me'
           className='btn btn-primary text-white hover:bg-secondary rounded-none'>
           Contact Me
