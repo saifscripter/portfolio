@@ -5,9 +5,10 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { ImCross } from 'react-icons/im';
 import { GoLocation } from 'react-icons/go';
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
+import PrimaryButton from './PrimaryButton';
 
 const Navbar = () => {
-  const [sidebar, setSidebar] = useState(true);
+  const [sidebar, setSidebar] = useState(false);
 
   return (
     <header className='bg-white py-8'>
@@ -34,9 +35,7 @@ const Navbar = () => {
             <CustomLink to={'/blogs'}>Blogs</CustomLink>
           </ul>
         </nav>
-        <button className='bg-white text-black text-2xl px-8 py-4'>
-          Contact Me
-        </button>
+        <PrimaryButton>Contact Me</PrimaryButton>
         <div className='flex justify-center gap-8 text-xl'>
           <a
             target='_blank'
