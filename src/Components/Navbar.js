@@ -29,9 +29,15 @@ const Navbar = () => {
         } fixed top-0 right-0 bottom-0 z-40 flex flex-col gap-16 sm:gap-20 justify-center lg:justify-end items-center w-1/2 h-screen bg-gray-900 text-white transition-transform duration-200 ease-in-out p-8`}>
         <nav>
           <ul className='flex flex-col items-center gap-8 text-2xl sm:text-3xl'>
-            <CustomLink to={'/'}>Home</CustomLink>
-            <CustomLink to={'/about-me'}>About Me</CustomLink>
-            <CustomLink to={'/blogs'}>Blogs</CustomLink>
+            <CustomLink onClick={() => setSidebar(!sidebar)} to={'/'}>
+              Home
+            </CustomLink>
+            <CustomLink onClick={() => setSidebar(!sidebar)} to={'/about-me'}>
+              About Me
+            </CustomLink>
+            <CustomLink onClick={() => setSidebar(!sidebar)} to={'/blogs'}>
+              Blogs
+            </CustomLink>
           </ul>
         </nav>
         <a
