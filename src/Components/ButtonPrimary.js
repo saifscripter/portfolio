@@ -1,10 +1,8 @@
 import React from 'react';
 
-const ButtonPrimary = ({ children, onclick }) => {
+const ButtonPrimary = ({ children }) => {
   return (
-    <button
-      onClick={onclick}
-      className='btn btn-primary text-white hover:bg-secondary rounded-none'>
+    <button className='btn btn-primary text-white hover:bg-secondary rounded-none'>
       {children}
     </button>
   );

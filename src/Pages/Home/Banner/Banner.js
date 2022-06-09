@@ -1,11 +1,8 @@
 import React from 'react';
 import banner from '../../../Assets/Images/banner.png';
 import ButtonOutline from '../../../Components/ButtonOutline';
-import ButtonPrimary from '../../../Components/ButtonPrimary';
+
 const Banner = () => {
-  const downloadResume = () => {
-    fetch('https://mdsaifullah.herokuapp.com/download-resume');
-  };
   return (
     <section className='container grid grid-cols-1 md:grid-cols-2 items-center gap-10'>
       <div>
@@ -16,9 +13,11 @@ const Banner = () => {
           <h2 className='text-base'>Web Developer || Programmer</h2>
         </div>
         <div className='flex gap-8'>
-          <ButtonPrimary onclick={downloadResume}>
+          <a
+            className='btn btn-primary text-white hover:bg-secondary rounded-none'
+            href='https://mdsaifullah.herokuapp.com/download-resume'>
             Download Resume
-          </ButtonPrimary>
+          </a>
           <ButtonOutline>Contact Me</ButtonOutline>
         </div>
       </div>
