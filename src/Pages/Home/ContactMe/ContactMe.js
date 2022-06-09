@@ -61,19 +61,19 @@ const ContactMe = () => {
       <h2 className='text-center text-4xl uppercase'>Contact Me</h2>
       <div className='flex gap-2 justify-center items-center mb-8'>
         <div className='w-8 h-[2px] bg-secondary'></div>
-        <p className='text-sm uppercase'>Get in touch</p>
+        <p className='text-sm uppercase'>Reach me out</p>
         <div className='w-8 h-[2px] bg-secondary'></div>
       </div>
 
       {/* Main Part */}
       <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-10'>
         <div>
-          <h4 className='text-xl font-bold mb-2'>Get In Touch</h4>
+          <h4 className='text-xl font-bold mb-2'>Contact Details</h4>
           <p className='mb-4 leading-relax'>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
-            officia mollitia ipsa reprehenderit, ut corporis, a pariatur
-            temporibus quidem dolor eveniet? Doloremque sunt fuga impedit
-            ratione possimus odit, et dolorum.
+            Hi there! I'm an aspiring Fron-end Web Developer who loves building
+            websites and web applications. I am passionate about learning and
+            exploring more web technologies to become a Full Stack Web
+            Developer.
           </p>
           <div className='flex gap-5 items-center mb-3'>
             <FaGithub className='text-[28px]' />
@@ -98,7 +98,7 @@ const ContactMe = () => {
           </div>
         </div>
         <form ref={form} onSubmit={handleSubmit(onSubmit)}>
-          <h4 className='text-xl font-bold mb-2'>Message Me</h4>
+          <h4 className='text-xl font-bold mb-2'>Let's talk</h4>
           <div className='grid grid-cols-2 gap-5 mb-5'>
             <div>
               <input
