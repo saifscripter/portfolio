@@ -18,7 +18,11 @@ const Banner = () => {
             href='https://mdsaifullah.herokuapp.com/download-resume'>
             Download Resume
           </a>
-          <ButtonOutline>Contact Me</ButtonOutline>
+          <a
+            href='/#contact-me'
+            className='btn btn-outline border-2 border-primary text-primary hover:bg-secondary rounded-none'>
+            Contact Me
+          </a>
         </div>
       </div>
       <div>

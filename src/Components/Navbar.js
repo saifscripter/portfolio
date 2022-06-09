@@ -5,7 +5,6 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { ImCross } from 'react-icons/im';
 import { GoLocation } from 'react-icons/go';
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
-import ButtonPrimary from './ButtonPrimary';
 
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
@@ -35,7 +34,11 @@ const Navbar = () => {
             <CustomLink to={'/blogs'}>Blogs</CustomLink>
           </ul>
         </nav>
-        <ButtonPrimary>Contact Me</ButtonPrimary>
+        <a
+          href='/#contact-me'
+          className='btn btn-primary text-white hover:bg-secondary rounded-none'>
+          Contact Me
+        </a>
         <div className='flex justify-center gap-8 text-xl'>
           <a
             target='_blank'
