@@ -19,16 +19,16 @@ const Navbar = () => {
       <button
         className={`${
           sidebar ? '' : 'shadow-2xl'
-        }  bg-white text-3xl p-4 fixed top-8 right-12 z-50`}
+        }  bg-white text-2xl lg:text-3xl p-4 fixed top-8 right-12 z-50`}
         onClick={() => setSidebar(!sidebar)}>
         {sidebar ? <ImCross /> : <GiHamburgerMenu />}
       </button>
       <div
         className={`${
           sidebar ? 'translate-x-0' : 'translate-x-full'
-        } fixed top-0 right-0 bottom-0 z-40 flex flex-col gap-20 justify-end items-center w-1/2 h-screen bg-black text-white transition-transform duration-200 ease-in-out pb-8`}>
+        } fixed top-0 right-0 bottom-0 z-40 flex flex-col gap-16 sm:gap-20 justify-center lg:justify-end items-center w-1/2 h-screen bg-black text-white transition-transform duration-200 ease-in-out p-8`}>
         <nav>
-          <ul className='flex flex-col items-center gap-8 text-3xl'>
+          <ul className='flex flex-col items-center gap-8 text-2xl sm:text-3xl'>
             <CustomLink to={'/'}>Home</CustomLink>
             <CustomLink to={'/about-me'}>About Me</CustomLink>
             <CustomLink to={'/blogs'}>Blogs</CustomLink>
@@ -39,7 +39,7 @@ const Navbar = () => {
           className='btn btn-primary text-white hover:bg-secondary rounded-none'>
           Contact Me
         </a>
-        <div className='flex justify-center gap-8 text-xl'>
+        <div className='flex justify-center gap-4 sm:gap-8 text-lg sm:text-xl'>
           <a
             target='_blank'
             href='https://www.github.com/mdsaifullah-wd'
@@ -62,7 +62,7 @@ const Navbar = () => {
             <FaPhone />
           </a>
         </div>
-        <div className='flex gap-2 items-center'>
+        <div className='flex gap-2 text-[9px] sm:text-base items-center'>
           <GoLocation />
           <p>Chattogram, Bangladesh</p>
         </div>
