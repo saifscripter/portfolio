@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import logo from '../Assets/Images/logo.png';
 import CustomLink from './CustomLink';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { ImCross } from 'react-icons/im';
