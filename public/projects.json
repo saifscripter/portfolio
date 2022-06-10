@@ -1,29 +1,29 @@
 [
   {
-    "id": 1,
-    "name": "RollaBike",
+    "id": "rollabike",
+    "name": "RollaBike - A Parts Manufacturer's Website",
     "description": "Designed and implemented functionalities to order items and manage the admin dashboard",
     "live": "https://roll-a-bike.web.app/",
     "client": "https://github.com/mdsaifullah-wd/rollabike-client-side",
     "server": "https://github.com/mdsaifullah-wd/rollabike-server-side",
-    "img": "https://i.ibb.co/ygNVZwr/1.jpg"
+    "img": "https://i.ibb.co/MVV5B7y/1.jpg"
   },
   {
-    "id": 2,
-    "name": "GYMO",
+    "id": "gymo",
+    "name": "GYMO - A Warehouse Management Website",
     "description": "Developed functionalities to manage inventories for a warehouse management company.",
     "live": "https://gymowarehouse.web.app/",
     "client": "https://github.com/mdsaifullah-wd/gymo-client-side",
     "server": "https://github.com/mdsaifullah-wd/gymo-server-side",
-    "img": "https://i.ibb.co/mh2B6sh/2.jpg"
+    "img": "https://i.ibb.co/bz52bxp/2.jpg"
   },
   {
-    "id": 3,
-    "name": "SaifElham Photography",
+    "id": "saifelham-photography",
+    "name": "SaifElham Photography - An Independent Service Provider",
     "description": "Implemented functionalities and designed user interface for a photography service provider.",
     "live": "https://independent-service-prov-cc41b.web.app/",
     "client": "https://github.com/mdsaifullah-wd/saifelham-photography",
     "server": "",
-    "img": "https://i.ibb.co/479cCqL/3.jpg"
+    "img": "https://i.ibb.co/8xkjBtq/3.jpg"
   }
 ]

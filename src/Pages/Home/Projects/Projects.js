@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import ButtonOutline from '../../../Components/ButtonOutline';
 import ProjectCard from './ProjectCard';
 
 const Projects = () => {
@@ -24,10 +23,6 @@ const Projects = () => {
         {projects.map((p) => (
           <ProjectCard key={p.id} project={p} />
         ))}
-      </div>
-
-      <div className='flex justify-center my-5'>
-        <ButtonOutline>View More</ButtonOutline>
       </div>
     </section>
   );
