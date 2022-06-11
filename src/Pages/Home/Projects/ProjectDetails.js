@@ -4,8 +4,7 @@ import { useParams } from 'react-router-dom';
 const ProjectDetails = () => {
   const { id } = useParams();
   const [project, setProject] = useState({});
-  const { name, description, imgL, imgR1, imgR2, imgR3, imgR4, imgR5, i } =
-    project;
+  const { name, imgL, imgR1, imgR2, imgR3, imgR4, imgR5 } = project;
   useEffect(() => {
     fetch(`https://mdsaifullah.herokuapp.com/project/${id}`)
       .then((res) => res.json())

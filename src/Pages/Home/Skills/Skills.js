@@ -5,13 +5,13 @@ const Skills = () => {
     { id: 1, name: 'html 5', completed: '90%' },
     { id: 2, name: 'javascript', completed: '75%' },
     { id: 3, name: 'css 3', completed: '50%' },
-    { id: 1, name: 'react js', completed: '80%' },
-    { id: 1, name: 'tailwind', completed: '85%' },
-    { id: 1, name: 'node js', completed: '30%' },
-    { id: 1, name: 'bootstrap', completed: '70%' },
-    { id: 1, name: 'express js', completed: '80%' },
-    { id: 1, name: 'sass', completed: '75%' },
-    { id: 1, name: 'mongodb', completed: '40%' },
+    { id: 4, name: 'react js', completed: '80%' },
+    { id: 5, name: 'tailwind', completed: '85%' },
+    { id: 6, name: 'node js', completed: '30%' },
+    { id: 7, name: 'bootstrap', completed: '70%' },
+    { id: 8, name: 'express js', completed: '80%' },
+    { id: 9, name: 'sass', completed: '75%' },
+    { id: 10, name: 'mongodb', completed: '40%' },
   ];
   return (
     <section className='container py-20 bg-gray-900 text-base-200'>

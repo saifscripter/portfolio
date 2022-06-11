@@ -102,7 +102,7 @@ const ContactMe = () => {
                 type='text'
                 placeholder='Name'
                 name='name'
-                class='input input-bordered w-full rounded-none text-accent border-gray-400 focus:border-primary'
+                className='input input-bordered w-full rounded-none text-accent border-gray-400 focus:border-primary'
                 {...register('name')}
               />
               <p className='mt-2 text-sm text-error'>{errors.name?.message}</p>
@@ -113,7 +113,7 @@ const ContactMe = () => {
                 type='text'
                 placeholder='Email'
                 name='email'
-                class='input input-bordered w-full rounded-none text-accent border-gray-400 focus:border-primary'
+                className='input input-bordered w-full rounded-none text-accent border-gray-400 focus:border-primary'
                 {...register('email')}
               />
               <p className='mt-2 text-sm text-error'>{errors.name?.message}</p>
@@ -124,7 +124,7 @@ const ContactMe = () => {
             type='text'
             placeholder='Subject'
             name='subject'
-            class='input input-bordered w-full rounded-none text-accent border-gray-400 focus:border-primary mb-5'
+            className='input input-bordered w-full rounded-none text-accent border-gray-400 focus:border-primary mb-5'
             {...register('subject')}
           />
           <p className='mt-2 text-sm text-error'>{errors.subject?.message}</p>
@@ -133,7 +133,7 @@ const ContactMe = () => {
             type='text'
             placeholder='Message'
             name='message'
-            class='textarea textarea-bordered w-full rounded-none text-accent border-gray-400 focus:border-primary mb-5'
+            className='textarea textarea-bordered w-full rounded-none text-accent border-gray-400 focus:border-primary mb-5'
             {...register('message')}
           />
           <p className='mt-2 text-sm text-error'>{errors.message?.message}</p>
