@@ -16,15 +16,13 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          primary: '#303d8b',
-          secondary: '#000b43',
+          primary: '#6937ff',
+          secondary: '#00adff',
           accent: '#221e41',
-          neutral: '#3d4451',
+          neutral: '#090909',
           'base-100': '#ffffff',
         },
       },
-      'dark',
-      'cupcake',
     ],
   },
 };

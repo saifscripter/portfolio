@@ -46,7 +46,7 @@ const ContactMe = () => {
           if (result.text) {
             setLoading(false);
             reset();
-            toast.success('Message Sent!');
+            toast.success('Thanks for reaching me out. I will reply you soon!');
           }
         },
         (error) => {
@@ -58,7 +58,7 @@ const ContactMe = () => {
     <section id='contact-me' className='container my-20'>
       {/* Title */}
       <h2 className='text-center text-4xl uppercase'>Contact Me</h2>
-      <div className='flex gap-2 justify-center items-center mb-8'>
+      <div className='flex gap-2 justify-center items-center mb-12'>
         <div className='w-8 h-[2px] bg-secondary'></div>
         <p className='text-sm uppercase'>Reach me out</p>
         <div className='w-8 h-[2px] bg-secondary'></div>
@@ -69,10 +69,8 @@ const ContactMe = () => {
         <div>
           <h4 className='text-xl font-bold mb-2'>Contact Details</h4>
           <p className='mb-4 leading-relax'>
-            Hi there! I'm an aspiring Fron-end Web Developer who loves building
-            websites and web applications. I am passionate about learning and
-            exploring more web technologies to become a Full Stack Web
-            Developer.
+            Feel free to contact me anytime. I will reply you as soon as
+            possible.
           </p>
           <div className='flex gap-5 items-center mb-3'>
             <FaGithub className='text-[28px]' />
@@ -140,9 +138,7 @@ const ContactMe = () => {
           />
           <p className='mt-2 text-sm text-error'>{errors.message?.message}</p>
 
-          <button
-            className='btn btn-primary text-white hover:bg-secondary rounded-none'
-            disabled={loading}>
+          <button className='btn btn-primary' disabled={loading}>
             Send Message
           </button>
         </form>

@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className='footer footer-center p-10 bg-gray-700 text-base-200 rounded'>
+    <footer className='footer footer-center p-10 bg-neutral text-base-200 rounded'>
       <div className='grid grid-flow-col gap-4'>
         <Link to={'/about-me'} className='link link-hover'>
           About Me

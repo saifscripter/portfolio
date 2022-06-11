@@ -4,13 +4,13 @@ import { MdOutlinePreview, MdOutlineOpenInNew } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
 const ProjectCard = ({ project }) => {
-  const { id, name, live, client, server, img } = project;
+  const { _id, name, live, client, server, thumb } = project;
   return (
     <div>
       <a target='_blank' href={live} rel='noreferrer'>
-        <div className='group overflow-hidden relative cursor-pointer'>
+        <div className='group overflow-hidden relative cursor-pointer rounded-lg'>
           <img
-            src={img}
+            src={thumb}
             alt=''
             className='group-hover:scale-105 transition-transform duration-75 ease-in'
           />
@@ -26,13 +26,15 @@ const ProjectCard = ({ project }) => {
           </div>
         </div>
       </a>
-      <Link to={`/projects/${id}`}>
-        <h3 className='hover:text-primary font-bold text-2xl my-3'>{name}</h3>
+      <Link to={`/projects/${_id}`}>
+        <h3 className='text-gray-600 hover:text-black font-bold text-2xl my-3'>
+          {name}
+        </h3>
       </Link>
       <div className='flex justify-between items-center pr-2'>
         <Link
-          to={`/projects/${id}`}
-          className='btn btn-primary text-white hover:bg-secondary rounded-none btn-sm'>
+          to={`/projects/${_id}`}
+          className='btn btn-accent text-white btn-sm'>
           Project Details
         </Link>
         <div className='flex gap-5 text-2xl'>
