@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard';
 const Projects = () => {
   const [projects, setProjects] = useState([]);
   useEffect(() => {
-    fetch('https://mdsaifullah.herokuapp.com/project')
+    fetch('projects.json')
       .then((res) => res.json())
       .then((data) => setProjects(data));
   }, []);
